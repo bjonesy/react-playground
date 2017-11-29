@@ -14,7 +14,10 @@ class Main extends Component {
 	renderPosts(posts) {
 		return posts.map(post => {
 			return (<Article key={post.id}
-							 post={post}/>);
+							 article_id={post.id}
+							 article_title={post.title}
+							 article_category={post.category}
+							 article_content={post.content}/>);
 		});
 	}
 

@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Title extends Component {	
-	render() {
-		return (
-			<header>
-				<h1 dangerouslySetInnerHTML={ {__html: this.props.children} }/>
-			</header>
-		);
-	}
+const Title = (props) => {
+	return (
+		<header>
+			<h1 dangerouslySetInnerHTML={ {__html: props.children} }/>
+		</header>
+	);
 }
 
 export default Title;

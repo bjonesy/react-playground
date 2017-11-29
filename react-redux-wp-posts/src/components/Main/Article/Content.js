@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Content extends Component {
-	render() {
-		return (<div className="card-text" dangerouslySetInnerHTML={ {__html: this.props.children} }/>);
-	}
+const Content = (props) => {
+	return (<div className="card-text" dangerouslySetInnerHTML={ {__html: props.children} }/>);
 }
 
 export default Content;
